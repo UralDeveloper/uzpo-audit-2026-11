@@ -1,0 +1,181 @@
+miningpartsgroup.ru — редиректы старых адресов (аудит 17.11.2026)
+======================================================================
+
+Что это. После переезда сайта на новый движок в поиске Яндекса остались старые адреса,
+которые сейчас отдают 404 (или, как статьи /stati/…, ведут на общий список /blog/).
+Ниже — готовые строки. Проверено 17.11.2026: все старые адреса из списка сейчас 404 / 301 на /blog/,
+все новые адреса отвечают 200.
+
+Репозиторий: miningpartsgroup-ru. Правила попадают в out/.htaccess через scripts/build-htaccess.mjs.
+В самом репозитории ничего не менялось.
+
+----------------------------------------------------------------------
+1. Карточки /shop/raznoe/… → тот же товар в новом разделе (строк: 104)
+----------------------------------------------------------------------
+Куда: дописать в конец deploy/catalog-redirects.map (файл дополняется скриптами,
+существующие строки не трогать). build-htaccess.mjs сам превратит их в RewriteRule … [R=301,L,NE].
+
+# raznoe → новые разделы (аудит 17.11.2026)
+/shop/raznoe/0502-1229-00-ball-bearing-atlas-copco-0502122900/ /shop/detali-transmissii/0502-1229-00-ball-bearing-atlas-copco-0502122900/;
+/shop/raznoe/0509-0221-00-0509-0223-00-bearing-atlas-copco-cop1838-cop1238-cop1840/ /shop/gidravlika/0509-0221-00-0509-0223-00-bearing-atlas-copco-cop1838-cop1238-cop1840/;
+/shop/raznoe/0516-1504-01-0516-1538-00-needle-bearing-atlas-copco-cop1838/ /shop/gidravlika/0516-1504-01-0516-1538-00-needle-bearing-atlas-copco-cop1838/;
+/shop/raznoe/10012550-vint-s-shestigrannoj-golovkoj/ /shop/detali-dvigatelya/10012550-vint-s-shestigrannoj-golovkoj/;
+/shop/raznoe/10037655-vintovoe-soedinenie/ /shop/detali-dvigatelya/10037655-vintovoe-soedinenie/;
+/shop/raznoe/10131581-bolt/ /shop/detali-dvigatelya/10131581-bolt/;
+/shop/raznoe/10132558-vint-s-shestigrannoj-golovkoj/ /shop/detali-dvigatelya/10132558-vint-s-shestigrannoj-golovkoj/;
+/shop/raznoe/1092-0656-00-level-gauge-atlas-copco-1092065600/ /shop/detali-transmissii/1092-0656-00-level-gauge-atlas-copco-1092065600/;
+/shop/raznoe/11117712-katushka/ /shop/elektrika/11117712-katushka/;
+/shop/raznoe/11117712-l-11993-katushka/ /shop/elektrika/11117712-l-11993-katushka/;
+/shop/raznoe/11427147-l-11993-klapan-regulirovochnyj/ /shop/gidravlika/11427147-l-11993-klapan-regulirovochnyj/;
+/shop/raznoe/12221774-l-11993-pereklyuchatel/ /shop/elektrika/12221774-l-11993-pereklyuchatel/;
+/shop/raznoe/12221774-pereklyuchatel/ /shop/elektrika/12221774-pereklyuchatel/;
+/shop/raznoe/12226342-l11993-magnit/ /shop/elektrika/12226342-l11993-magnit/;
+/shop/raznoe/12226342-magnit/ /shop/elektrika/12226342-magnit/;
+/shop/raznoe/12228032-rezinovaya-podushka/ /shop/hodovaya-chast/12228032-rezinovaya-podushka/;
+/shop/raznoe/12249935-l-11993-segment/ /shop/detali-dvigatelya/12249935-l-11993-segment/;
+/shop/raznoe/12446853-shatun/ /shop/detali-dvigatelya/12446853-shatun/;
+/shop/raznoe/12478528-reczirkulyacziya-vyhlopnyh-gazov/ /shop/detali-dvigatelya/12478528-reczirkulyacziya-vyhlopnyh-gazov/;
+/shop/raznoe/12856186-narevatelnyj-flanecz/ /shop/detali-dvigatelya/12856186-narevatelnyj-flanecz/;
+/shop/raznoe/2653-1322-21-rubber-suction-cup-atlas-copco-2653132221/ /shop/detali-transmissii/2653-1322-21-rubber-suction-cup-atlas-copco-2653132221/;
+/shop/raznoe/2911-0160-01-oil-seperator-atlas-copco-2911016001/ /shop/detali-dvigatelya/2911-0160-01-oil-seperator-atlas-copco-2911016001/;
+/shop/raznoe/3115-0297-01-02-03-shim-atlas-copco-cop1840-1838/ /shop/gidravlika/3115-0297-01-02-03-shim-atlas-copco-cop1840-1838/;
+/shop/raznoe/3115-1582-00-driver-atlas-copco-cop1838-3115158200/ /shop/gidravlika/3115-1582-00-driver-atlas-copco-cop1838-3115158200/;
+/shop/raznoe/3115-1822-01-diapragm-atlas-copco-cop1838-1840-3115182201/ /shop/gidravlika/3115-1822-01-diapragm-atlas-copco-cop1838-1840-3115182201/;
+/shop/raznoe/3115-1881-00-bushing-atlas-copco-3115188100/ /shop/gidravlika/3115-1881-00-bushing-atlas-copco-3115188100/;
+/shop/raznoe/3115-2122-00-stop-ring-atlas-copco-3115212200/ /shop/gidravlika/3115-2122-00-stop-ring-atlas-copco-3115212200/;
+/shop/raznoe/3115-2124-00-piston-guide-atlas-copco-3115212400/ /shop/gidravlika/3115-2124-00-piston-guide-atlas-copco-3115212400/;
+/shop/raznoe/3115-2968-00-rt-ch-atlas-copco-3115296800/ /shop/gidravlika/3115-2968-00-rt-ch-atlas-copco-3115296800/;
+/shop/raznoe/3115-3744-00-bushing-atlas-copco-3115374400/ /shop/gidravlika/3115-3744-00-bushing-atlas-copco-3115374400/;
+/shop/raznoe/3115167100-piston-guide-atlas-copco-cop1840-3115167100/ /shop/gidravlika/3115167100-piston-guide-atlas-copco-cop1840-3115167100/;
+/shop/raznoe/3128-0784-11-pull-rope-atlas-copco-3128078411/ /shop/gidravlika/3128-0784-11-pull-rope-atlas-copco-3128078411/;
+/shop/raznoe/3128-2407-03-half-bushing-atlas-copco-3128240703/ /shop/gidravlika/3128-2407-03-half-bushing-atlas-copco-3128240703/;
+/shop/raznoe/3214-9012-80-relief-cartridge-atlas-copco-3214901280/ /shop/gidravlika/3214-9012-80-relief-cartridge-atlas-copco-3214901280/;
+/shop/raznoe/3216-9339-15-gasket-atlas-copco-3216933915/ /shop/detali-transmissii/3216-9339-15-gasket-atlas-copco-3216933915/;
+/shop/raznoe/6000850-regulyator-temperatury/ /shop/detali-dvigatelya/6000850-regulyator-temperatury/;
+/shop/raznoe/6204186-regulyator-temperatury/ /shop/detali-dvigatelya/6204186-regulyator-temperatury/;
+/shop/raznoe/6204371-zamykatel-kontakta-shhupa/ /shop/elektrika/6204371-zamykatel-kontakta-shhupa/;
+/shop/raznoe/7623020-l-11993-regulyator-temperatury/ /shop/detali-dvigatelya/7623020-l-11993-regulyator-temperatury/;
+/shop/raznoe/9077223-viskoznyj-dempfer/ /shop/detali-dvigatelya/9077223-viskoznyj-dempfer/;
+/shop/raznoe/9078046-czilindr/ /shop/gidravlika/9078046-czilindr/;
+/shop/raznoe/9078049-czilindr/ /shop/gidravlika/9078049-czilindr/;
+/shop/raznoe/9078214-remkomplekt-sharika/ /shop/detali-dvigatelya/9078214-remkomplekt-sharika/;
+/shop/raznoe/9271340-rezinovoe-soedinenie/ /shop/detali-dvigatelya/9271340-rezinovoe-soedinenie/;
+/shop/raznoe/944410603-korpus-satellitov/ /shop/detali-transmissii/944410603-korpus-satellitov/;
+/shop/raznoe/9880511-rezinovoe-soedinenie/ /shop/detali-dvigatelya/9880511-rezinovoe-soedinenie/;
+/shop/raznoe/analog-module-bosch-rexroth-r900942541-dlya-ekskavatora/ /shop/elektrika/analog-module-bosch-rexroth-r900942541-dlya-ekskavatora/;
+/shop/raznoe/beam-ok-rh120e-6030-dlya-ekskavatora-caterpillar-6030/ /shop/detali-transmissii/beam-ok-rh120e-6030-dlya-ekskavatora-caterpillar-6030/;
+/shop/raznoe/bg-00917593-val-vrashhayushhijsya/ /shop/detali-transmissii/bg-00917593-val-vrashhayushhijsya/;
+/shop/raznoe/bg-01127113-korpus-igolchatogo-podshipnika/ /shop/detali-dvigatelya/bg-01127113-korpus-igolchatogo-podshipnika/;
+/shop/raznoe/bolt-bashmaka-liebherr-7001689-dlya-ekskavatora/ /shop/detali-dvigatelya/bolt-bashmaka-liebherr-7001689-dlya-ekskavatora/;
+/shop/raznoe/bolt-liebherr-4901120-dlya-ekskavatora/ /shop/detali-dvigatelya/bolt-liebherr-4901120-dlya-ekskavatora/;
+/shop/raznoe/caterpillar-938f-4e4003-dlya-frontalnogo-pogruzchika-caterpillar-938f/ /shop/detali-transmissii/caterpillar-938f-4e4003-dlya-frontalnogo-pogruzchika-caterpillar-938f/;
+/shop/raznoe/connector-assy-liebherr-9078324-dlya-ekskavatora/ /shop/elektrika/connector-assy-liebherr-9078324-dlya-ekskavatora/;
+/shop/raznoe/control-block-bosch-rexroth-r900020289-dlya-ekskavatora/ /shop/gidravlika/control-block-bosch-rexroth-r900020289-dlya-ekskavatora/;
+/shop/raznoe/daewoo-mega-zf-250-dl-dlya-frontalnogo-pogruzchika/ /shop/detali-transmissii/daewoo-mega-zf-250-dl-dlya-frontalnogo-pogruzchika/;
+/shop/raznoe/danfoss-642a13a-dlya-frontalnogo-pogruzchika-volvo-l330/ /shop/detali-transmissii/danfoss-642a13a-dlya-frontalnogo-pogruzchika-volvo-l330/;
+/shop/raznoe/danfoss-bx200ls-danfoss-bx200ls-dlya-ekskavatora-liebherr-r922lc/ /shop/gidravlika/danfoss-bx200ls-danfoss-bx200ls-dlya-ekskavatora-liebherr-r922lc/;
+/shop/raznoe/danfoss-ospc200on-dlya-ekskavatora-zeppelin-zm19/ /shop/gidravlika/danfoss-ospc200on-dlya-ekskavatora-zeppelin-zm19/;
+/shop/raznoe/datchik-urovnya-6004232/ /shop/elektrika/datchik-urovnya-6004232/;
+/shop/raznoe/diaphragm-3115132400-atlas-copco-cop1028-3115132400/ /shop/gidravlika/diaphragm-3115132400-atlas-copco-cop1028-3115132400/;
+/shop/raznoe/differenczial-448-05502-r32-9-r-5a-dlya-ekskavatora-pogruzchika-jcb-3cx/ /shop/detali-transmissii/differenczial-448-05502-r32-9-r-5a-dlya-ekskavatora-pogruzchika-jcb-3cx/;
+/shop/raznoe/driver-3115554301-atlas-copco-3115-5543-01-driver-3115554301/ /shop/gidravlika/driver-3115554301-atlas-copco-3115-5543-01-driver-3115554301/;
+/shop/raznoe/funda-bota-caterpillar-ctp-costex-216-226-228-173-0703-dlya-ekskavatora/ /shop/detali-transmissii/funda-bota-caterpillar-ctp-costex-216-226-228-173-0703-dlya-ekskavatora/;
+/shop/raznoe/gajka-bashmaka-liebherr-7g0343-dlya-avtokrana/ /shop/detali-dvigatelya/gajka-bashmaka-liebherr-7g0343-dlya-avtokrana/;
+/shop/raznoe/grup-conic-jcb-458-70246-dlya-ekskavatora-pogruzchika-jcb/ /shop/detali-transmissii/grup-conic-jcb-458-70246-dlya-ekskavatora-pogruzchika-jcb/;
+/shop/raznoe/homag-4-011-04-1486-4011041486-directional-valve-5725650220-with-coil-series-co1-5420507022-bosch-rexroth-5420507022-homag-4011041486-dlya-derevoobrabatyvayushhego-oborudovaniya-homag/ /shop/gidravlika/homag-4-011-04-1486-4011041486-directional-valve-5725650220-with-coil-series-co1-5420507022-bosch-rexroth-5420507022-homag-4011041486-dlya-derevoobrabatyvayushhego-oborudovaniya-homag/;
+/shop/raznoe/hub-carrier-zf-10008993-dlya-ekskavatora-zf-a900b-li-a900c-li-a902-li/ /shop/detali-transmissii/hub-carrier-zf-10008993-dlya-ekskavatora-zf-a900b-li-a900c-li-a902-li/;
+/shop/raznoe/komatsu-pc-dlya-ekskavatora-komatsu/ /shop/detali-transmissii/komatsu-pc-dlya-ekskavatora-komatsu/;
+/shop/raznoe/korobka-otbora-moshhnosti-caterpillar-6030-367-6805-dlya-ekskavatora-caterpillar-6030/ /shop/detali-transmissii/korobka-otbora-moshhnosti-caterpillar-6030-367-6805-dlya-ekskavatora-caterpillar-6030/;
+/shop/raznoe/magnetic-atlas-copco-atlas-2653277448/ /shop/elektrika/magnetic-atlas-copco-atlas-2653277448/;
+/shop/raznoe/muelle-tensor-komatsu-dlya-ekskavatora/ /shop/hodovaya-chast/muelle-tensor-komatsu-dlya-ekskavatora/;
+/shop/raznoe/multi-disc-carrier-liebherr-932720701-dlya-ekskavatora-liebherr-r954-r964/ /shop/detali-transmissii/multi-disc-carrier-liebherr-932720701-dlya-ekskavatora-liebherr-r954-r964/;
+/shop/raznoe/nakladka-caterpillar-112-0885-dlya-stroitelnoj-tehniki/ /shop/detali-kuzova/nakladka-caterpillar-112-0885-dlya-stroitelnoj-tehniki/;
+/shop/raznoe/o-ring-liebherr-530151508-dlya-ekskavatora/ /shop/detali-dvigatelya/o-ring-liebherr-530151508-dlya-ekskavatora/;
+/shop/raznoe/piese-axa-carraro-dlya-stroitelnoj-tehniki/ /shop/detali-transmissii/piese-axa-carraro-dlya-stroitelnoj-tehniki/;
+/shop/raznoe/pilot-control-unit-rexroth-5717427-dlya-frontalnogo-pogruzchika-liebherr-l524/ /shop/gidravlika/pilot-control-unit-rexroth-5717427-dlya-frontalnogo-pogruzchika-liebherr-l524/;
+/shop/raznoe/piston-atlas-copco-cop1840-3115212600/ /shop/gidravlika/piston-atlas-copco-cop1840-3115212600/;
+/shop/raznoe/planetario-carraro-9968080-dlya-ekskavatora-pogruzchika-case-580l-580m/ /shop/detali-transmissii/planetario-carraro-9968080-dlya-ekskavatora-pogruzchika-case-580l-580m/;
+/shop/raznoe/polukolczo-upornoe-liebherr-9132120-dlya-ekskavatora-liebherr/ /shop/detali-dvigatelya/polukolczo-upornoe-liebherr-9132120-dlya-ekskavatora-liebherr/;
+/shop/raznoe/pressure-feed-valve-bosch-rexroth-r900936720-dlya-ekskavatora/ /shop/gidravlika/pressure-feed-valve-bosch-rexroth-r900936720-dlya-ekskavatora/;
+/shop/raznoe/regulator-cartridge-without-aperture-bosch-rexroth-r902000538-dlya-ekskavatora/ /shop/gidravlika/regulator-cartridge-without-aperture-bosch-rexroth-r902000538-dlya-ekskavatora/;
+/shop/raznoe/remkomplekt-liebherr-570528108-dlya-avtokrana/ /shop/detali-dvigatelya/remkomplekt-liebherr-570528108-dlya-avtokrana/;
+/shop/raznoe/repuestos-allison-dlya-ekskavatora-pogruzchika/ /shop/detali-transmissii/repuestos-allison-dlya-ekskavatora-pogruzchika/;
+/shop/raznoe/rexroth-4th7b06-10-m01-141781-05-dlya-ekskavatora/ /shop/gidravlika/rexroth-4th7b06-10-m01-141781-05-dlya-ekskavatora/;
+/shop/raznoe/rexroth-4thf60xx-20-4l-08350661-dlya-ekskavatora/ /shop/gidravlika/rexroth-4thf60xx-20-4l-08350661-dlya-ekskavatora/;
+/shop/raznoe/seal-hood-2651653558-atlas-copco-2651653558-dlya-atlas-copco/ /shop/detali-transmissii/seal-hood-2651653558-atlas-copco-2651653558-dlya-atlas-copco/;
+/shop/raznoe/servotransmision-allison-dlya-ekskavatora/ /shop/detali-transmissii/servotransmision-allison-dlya-ekskavatora/;
+/shop/raznoe/shaft-types-shaft-spare-parts-zf-shaft-spare-parts-zf-yedek-parca-saft-cesitleri-zf/ /shop/detali-transmissii/shaft-types-shaft-spare-parts-zf-shaft-spare-parts-zf-yedek-parca-saft-cesitleri-zf/;
+/shop/raznoe/shajba-opornaya-caterpillar-1w-6963-dlya-stroitelnoj-tehniki/ /shop/detali-transmissii/shajba-opornaya-caterpillar-1w-6963-dlya-stroitelnoj-tehniki/;
+/shop/raznoe/shajba-opornaya-liebherr-9957715-dlya-ekskavatora-liebherr-a904c-li-a914c-li/ /shop/detali-dvigatelya/shajba-opornaya-liebherr-9957715-dlya-ekskavatora-liebherr-a904c-li-a914c-li/;
+/shop/raznoe/shlang-iglan/ /shop/gidravlika/shlang-iglan/;
+/shop/raznoe/shlang-vysokogo-davleniya/ /shop/gidravlika/shlang-vysokogo-davleniya/;
+/shop/raznoe/shlangi-vysokogo-davleniya/ /shop/gidravlika/shlangi-vysokogo-davleniya/;
+/shop/raznoe/shtuczer-iglan/ /shop/gidravlika/shtuczer-iglan/;
+/shop/raznoe/shtuczer-pryamoj-iglan/ /shop/gidravlika/shtuczer-pryamoj-iglan/;
+/shop/raznoe/val-atlas-copco-oem-dlya-ekskavatora-atlas-copco/ /shop/detali-transmissii/val-atlas-copco-oem-dlya-ekskavatora-atlas-copco/;
+/shop/raznoe/val-pervichnyj-caterpillar-174-9349-dlya-karernogo-samosvala-caterpillar-785s-785d-994d-994f/ /shop/detali-transmissii/val-pervichnyj-caterpillar-174-9349-dlya-karernogo-samosvala-caterpillar-785s-785d-994d-994f/;
+/shop/raznoe/val-vtorichnyj-7015751-dlya-ekskavatora-zf-a900-li-a900b-li-a900c-li-a902-li/ /shop/detali-transmissii/val-vtorichnyj-7015751-dlya-ekskavatora-zf-a900-li-a900b-li-a900c-li-a902-li/;
+/shop/raznoe/valve-bosch-rexroth-r901225220-dlya-ekskavatora/ /shop/gidravlika/valve-bosch-rexroth-r901225220-dlya-ekskavatora/;
+/shop/raznoe/valve-bosch-rexroth-r901225317-dlya-ekskavatora/ /shop/gidravlika/valve-bosch-rexroth-r901225317-dlya-ekskavatora/;
+/shop/raznoe/vyzhimnoj-podshipnik-liebherr-lh-joystick-right-94046652-dlya-ekskavatora-liebherr/ /shop/detali-transmissii/vyzhimnoj-podshipnik-liebherr-lh-joystick-right-94046652-dlya-ekskavatora-liebherr/;
+/shop/raznoe/zf-8474955108-dlya-ekskavatora/ /shop/detali-transmissii/zf-8474955108-dlya-ekskavatora/;
+/shop/uncategorized/nasos-vysokogo-davleniya-pakmas/ /shop/gidravlika/nasos-vysokogo-davleniya-pakmas/;
+
+----------------------------------------------------------------------
+2. Старые категории, пагинация и бренды без товара — scripts/build-htaccess.mjs
+----------------------------------------------------------------------
+Куда: раздел «# --- устаревшие адреса ---», после строки RewriteRule ^shop/uncategorized/$ …
+QSD — отбросить старые параметры (?_product_brand=…), чтобы не плодить адреса с метками.
+
+RewriteRule ^product-category/(chasti-privoda|detali-dvigatelya|detali-kuzova|detali-transmissii|elektrika|gidravlika|hodovaya-chast)(/page/\\d+)?/?$ ${ORIGIN}/shop/$1/ [R=301,L,QSD]
+RewriteRule ^product-category/ ${ORIGIN}/shop/ [R=301,L,QSD]
+RewriteRule ^shop/page/\\d+/?$ ${ORIGIN}/shop/ [R=301,L,QSD]
+RewriteRule ^brand/(berco|epiroc|sandvik|john-deere|kubota|prochee)/?$ ${ORIGIN}/shop/ [R=301,L,QSD]
+
+Примечание: в шаблонной строке JS обратный слэш нужно удваивать (\\d), как в соседних правилах файла;
+в готовом .htaccess должно получиться \d.
+Покрывает 18 старых категорий (вкл. /product-category/raznoe/, /uncategorized/ и страницы /page/N/),
+11 адресов старой пагинации /shop/page/N/?… и 6 брендов, которых нет в ассортименте.
+Все они сейчас отдают 404; все адреса назначения отвечают 200 (проверено 17.11.2026).
+
+----------------------------------------------------------------------
+3. Старые статьи /stati/<адрес>/ → та же статья в /blog/ (строк: 8)
+----------------------------------------------------------------------
+Куда: в blogRules, ПЕРЕД строкой `RewriteRule ^stati(/|$) ${ORIGIN}/blog/ [R=301,L]`.
+Если поставить после — сработает общее правило и всё уйдёт на список /blog/, как сейчас.
+Строки перечислены явно (а не одним правилом ^stati/(.+)$), потому что проверены: у каждой есть статья в /blog/.
+
+  `RewriteRule ^stati/detali-dvigatelya-dlya-gornoj-tehniki-polnyj-katalog-zamena-podbor/?$ ${ORIGIN}/blog/detali-dvigatelya-dlya-gornoj-tehniki-polnyj-katalog-zamena-podbor/ [R=301,L]`,
+  `RewriteRule ^stati/dvigatel-caterpillar-modeli-harakteristiki-remont-i-zapchasti/?$ ${ORIGIN}/blog/dvigatel-caterpillar-modeli-harakteristiki-remont-i-zapchasti/ [R=301,L]`,
+  `RewriteRule ^stati/kompleksnye-resheniya-dlya-privoda-caterpillar-remkomplekty-i-czepnye-natyazhiteli/?$ ${ORIGIN}/blog/kompleksnye-resheniya-dlya-privoda-caterpillar-remkomplekty-i-czepnye-natyazhiteli/ [R=301,L]`,
+  `RewriteRule ^stati/originalnye-zapchasti-dlya-karernoj-tehniki-premialnogo-klassa/?$ ${ORIGIN}/blog/originalnye-zapchasti-dlya-karernoj-tehniki-premialnogo-klassa/ [R=301,L]`,
+  `RewriteRule ^stati/podbor-i-pokupka-zapchastej-dlya-specztehniki-kak-izbezhat-prostoev/?$ ${ORIGIN}/blog/podbor-i-pokupka-zapchastej-dlya-specztehniki-kak-izbezhat-prostoev/ [R=301,L]`,
+  `RewriteRule ^stati/zapasnye-chasti-zalog-besperebojnoj-raboty-promyshlennogo/?$ ${ORIGIN}/blog/zapasnye-chasti-zalog-besperebojnoj-raboty-promyshlennogo/ [R=301,L]`,
+  `RewriteRule ^stati/zapchasti-caterpillar-dlya-gornodobyvayushhej-tehniki-pochemu-miningpartsgroup-ru-eto-ne-diler-i-ne-obychnyj-magazin/?$ ${ORIGIN}/blog/zapchasti-caterpillar-dlya-gornodobyvayushhej-tehniki-pochemu-miningpartsgroup-ru-eto-ne-diler-i-ne-obychnyj-magazin/ [R=301,L]`,
+  `RewriteRule ^stati/zapchasti-rexroth-dlya-gornodobyvayushhej-tehniki-gidravlika-kotoraya-rabotaet-v-karerah-po-vsemu-miru/?$ ${ORIGIN}/blog/zapchasti-rexroth-dlya-gornodobyvayushhej-tehniki-gidravlika-kotoraya-rabotaet-v-karerah-po-vsemu-miru/ [R=301,L]`,
+
+----------------------------------------------------------------------
+4. Бренды с товаром — не редирект, а новые страницы по старым адресам
+----------------------------------------------------------------------
+/brand/caterpillar/, /brand/komatsu/, /brand/liebherr/, /brand/jcb/, /brand/rexroth/ — сейчас 404,
+а под эти бренды большой спрос (см. отчёт, раздел miningpartsgroup.ru). Сделать страницы брендов именно по этим адресам.
+/brand/hitachi/ — если клиент подтвердит, что возит Hitachi; иначе добавить hitachi в правило п. 2 (301 на /shop/).
+Если страницы брендов будут делаться дольше пары недель — временно 302 на /shop/, потом снять.
+
+----------------------------------------------------------------------
+5. robots.txt — src/app/robots.txt/route.ts, массив CLEAN_PARAMS
+----------------------------------------------------------------------
+Дописать к существующим (utm_*, yclid, gclid, fbclid, s, p, author):
+  'ysclid', '_openstat', 'gad_source', 'gad_campaignid', 'elementor-preview', 'ver', '_product_brand', 'product-cat', 'cb',
+Это параметры рекламы и старого сайта, с которыми адреса сейчас есть в поиске.
+
+----------------------------------------------------------------------
+6. Проверка после выкладки
+----------------------------------------------------------------------
+curl -sI https://miningpartsgroup.ru/product-category/gidravlika/ | head -3        → 301, Location: …/shop/gidravlika/
+curl -sI 'https://miningpartsgroup.ru/product-category/elektrika/page/2/?_product_brand=liebherr' | head -3   → 301 на /shop/elektrika/ без ?…
+curl -sI https://miningpartsgroup.ru/shop/raznoe/0502-1229-00-ball-bearing-atlas-copco-0502122900/ | head -3   → 301 на /shop/detali-transmissii/0502-1229-00-ball-bearing-atlas-copco-0502122900/
+curl -sI https://miningpartsgroup.ru/stati/detali-dvigatelya-dlya-gornoj-tehniki-polnyj-katalog-zamena-podbor/ | head -3   → 301 на /blog/detali-dvigatelya-dlya-gornoj-tehniki-polnyj-katalog-zamena-podbor/
+curl -sI https://miningpartsgroup.ru/brand/sandvik/ | head -3   → 301 на /shop/
+Новые адреса после редиректа должны отвечать 200 без второго редиректа.
+Затем — отправить старые адреса на переобход в Яндекс Вебмастере.
